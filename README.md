@@ -47,7 +47,7 @@ For this project, feature extraction involves applying some corrections, determi
 
 The algorithm to determine field orientation from segments combines a few different strategies. First, it finds the centerpoint for each of three segments: the pitcher's mound, the infield (including the pitcher's mound), and the entire field (including the infield and pitcher's mound). Using these three centerpoints, it calculates three direction vectors. An initial estimation of the orientation is provided by calculating the unit vector of each direction vector and finding the sum of unit vectors. After rotating the segments based on the initial estimation, some additional features are used to refine the estimation, including the basepaths and the outfield corners.
 
-Following this estimation, the segments are rotated and converted to a 2-dimensional polygon. The diagonal measurement from data collection is used to convert from pixels to feet, and the mound center is placed at the coordinate (0, 60.5), meaning that (0, 0) is home plate. Once the location of home plate is determined, more adjustments are applied to the orientation. The field is aligned so that each foul line intersects the boundary between the outfield corners. This prevents the error in orientation from being great enough to cause the foul lines to intersect with a boundary that is truly in short foul territory. This final adjustment provides the set of vertices represented the estimated field boundary.
+Following this estimation, the segments are rotated and converted to a 2-dimensional polygon. The diagonal measurement from data collection is used to convert from pixels to feet, and the mound center is placed at the coordinate (0, 60.5), meaning that (0, 0) is home plate. Once the location of home plate is determined, more adjustments are applied to the orientation. The field is aligned so that each foul line intersects the boundary between the outfield corners. This prevents the error in orientation from being great enough to cause the foul lines to intersect with a boundary that is truly in short foul territory. This final adjustment provides the set of vertices representing the estimated field boundary.
 
 ### 4. Park Factor Estimation
 
@@ -65,7 +65,7 @@ For comparison, here is his 2024 Hits Spray Chart directly from [his Baseball Sa
 
 <img src="content/ohtani_savant.png" width="350"/>
 
-Next, we have all of Mike Trout's hits during the Statcast-era mapped onto the field at his high school, Millville High School:
+Next, we have all of Mike Trout's hits during MLB's Statcast-era mapped onto the field at his high school, Millville High School:
 
 <img src="content/trout.png" width="350"/>
 
@@ -73,7 +73,7 @@ And now, we have all of Mike Trout's fair batted balls that are marked outside t
 
 <img src="content/trout_adj.png" width="350"/>
 
-During the Statcast-era, Trout has hit 280 home runs. Statcast did not register coordinates or distances for 16 of these home runs, meaning only 264 are plotted above. The plot also includes 72 doubles, 15 triples, and 241 other events. Assuming that each of these points would have been a home run, Trout would have 608 home runs since 2015 (including the 16 not included above). Prior to 2015, he hit 98 home runs, which would bring the total to 706. If we prorate his prior home runs instead of simply adding them, the total would rise to 820.8 home runs. While this figure serves little practical purpose, the exercise demonstrates what can be done with field boundaries and provides a fun "what-if" scenario.
+During the Statcast-era, Trout has hit 280 home runs. Statcast did not register coordinates or distances for 16 of these home runs, meaning only 264 are plotted above. The plot also includes 328 batted balls that were not home runs in the park in which they were hit: 72 doubles, 15 triples, and 241 other events. Assuming that each of these points would have been a home run, Trout would have 608 home runs since 2015 (including the 16 not included above). Prior to 2015, he hit 98 home runs, which would bring the total to 706. If we prorate his prior home runs instead of simply adding them, the total would rise to 820.8 home runs. While this figure serves little practical purpose, the exercise demonstrates what can be done with field boundaries and provides an interesting "what-if" scenario.
 
 
 ## Next Steps
