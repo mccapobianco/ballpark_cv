@@ -1,0 +1,70 @@
+ballpark,park_factor,g_home,lg,pa, obstruction_type
+las_vegas_ballpark,1.1052456538170825,75.0,aaa,,
+greater_nevada_field,1.2665674637505624,74.0,aaa,,
+cheney_stadium,1.0524433849821215,75.0,aaa,,
+rio_grande_credit_union_field_at_isotopes_park,1.2935672514619885,75.0,aaa,,
+southwest_university_park,1.221794871794872,75.0,aaa,, structural_shadow
+chickasaw_bricktown_ballpark,0.7776523702031604,75.0,aaa,, structural_shadow
+sutter_health_park,0.637,75.0,aaa,,
+constellation_field,0.799716478165737,74.0,aaa,, structural_shadow
+dell_diamond,0.93875,74.0,aaa,,
+smiths_ballpark,1.0172325485336635,75.0,aaa,,
+nbt_bank_stadium,1.112314566577301,75.0,aaa,,
+huntington_park,1.0288417329796642,75.0,aaa,, structural_shadow
+durham_bulls_athletic_park,0.8992718446601943,75.0,aaa,,
+werner_park,1.0672352850776088,72.0,aaa,,
+coca_cola_park,1.0761824165491305,75.0,aaa,,
+chs_field,1.1382648401826485,73.0,aaa,,
+principal_park,1.3616692426584234,75.0,aaa,,
+autozone_park,1.0367160416010084,76.0,aaa,,
+polar_park,0.9877750611246944,75.0,aaa,,
+pnc_field,1.1649471264367817,75.0,aaa,,
+truist_field,1.1252337161826993,73.0,aaa,,
+louisville_slugger_field,1.003188627821223,73.0,aaa,,
+harbor_park,0.8055865921787709,75.0,aaa,, structural_shadow
+vystar_ballpark,0.9709165687426556,74.0,aaa,,
+innovative_field,0.8494613172134744,73.0,aaa,,
+sahlen_field,0.8954869358669834,74.0,aaa,, structural_shadow
+victory_field,0.9880591223366728,76.0,aaa,,
+fifth_third_field,0.8957575757575758,75.0,aaa,, structural_shadow
+coolray_field,0.9139723277654314,74.0,aaa,, natural_shadow
+first_horizon_park,0.8377358490566037,72.0,aaa,,
+kia_champions_field,1.0239234449760766,76.0,kbo,,
+daegu_samsung_lions_park,1.1508325699197068,77.0,kbo,,
+mokdong_baseball_stadium,0.933257918552036,78.0,kbo,,
+mokdong_baseball_stadium,0.8850855745721272,73.0,kbo,,
+suwon_kt_wiz_park,1.0284079700138096,74.0,kbo,,
+incheon_ssg_landers_field,1.1822577254572209,71.0,kbo,,
+sajik_baseball_stadium,1.1383299798792756,71.0,kbo,, structural_shadow
+cheongju_baseball_stadium,0.9768920427938476,71.0,kbo,,
+changwon_nc_park,0.9034716626376578,73.0,kbo,, structural_shadow
+hotto_motto_field_kobe,1.036117381489842,8.0,npb,,
+meiji_jingu_baseball_stadium,1.1981424148606812,68.0,npb,,
+hanshin_koshien_stadium,0.8257464676086377,62.0,npb,,
+mazda_zoom_zoom_stadium_hiroshima,1.079347371356854,71.0,npb,,
+rakuten_mobile_park_miyagi,0.8227731864095501,66.0,npb,,
+yokohama_stadium,1.0901639344262295,71.0,npb,, structural
+zozo_marine_stadium,1.0819730096057516,71.0,npb,,
+coors_field,112.0,,mlb,56537.0,
+fenway_park,107.0,,mlb,57350.0,
+great_american_ballpark,105.0,,mlb,56113.0, structural
+kauffman_stadium,104.0,,mlb,56788.0,
+target_field,102.0,,mlb,56874.0, structural
+pnc_park,101.0,,mlb,56717.0, structural_shadow
+citizens_bank_park,101.0,,mlb,59030.0,
+nationals_park,101.0,,mlb,55170.0,
+angels_stadium,100.0,,mlb,55854.0,
+dodger_stadium,100.0,,mlb,59029.0,
+busch_stadium,100.0,,mlb,55932.0,
+truist_park,100.0,,mlb,56162.0, structural_shadow
+yankee_stadium,100.0,,mlb,59223.0,
+camden_yards,99.0,,mlb,55857.0,
+guaranteed_rate_field,99.0,,mlb,57822.0,
+comerica_park,98.0,,mlb,55344.0,
+progressive_field,97.0,,mlb,56438.0,
+oakland_coliseum,97.0,,mlb,55403.0,
+wrigley_field,97.0,,mlb,55217.0,
+american_family_field,97.0,,mlb,57190.0, structural
+oracle_park,97.0,,mlb,55227.0,
+citi_field,97.0,,mlb,58441.0,
+petco_park,96.0,,mlb,58146.0,

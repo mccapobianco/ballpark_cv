@@ -4,9 +4,19 @@
 
 This project aims to apply computer vision techniques to extract and analyze features of baseball fields from satellite images. The primary objective is to train a model to automatically identify key features of a baseball field and measure its boundary in feet. These measurements can then be used in a variety of analytical applications, including data visualizations and park factor estimations, as demonstrated in this project.
 
+## Demo Preview
+
+The [demo.py](demo.py) script in this repository demonstrates key aspects of this project. It generates a visual representation of a user-provided baseball field based on its latitude and longitude. The resulting graphic illustrates the field's dimensions, orientation, location, and park factor. 
+
+Below is an example of this graphic:
+
+<img src="content/demo.png" width="400"/>
+
 ## Project Components
 
 ### 1. Data Collection
+
+**NOTE:** ArcGIS is removing Map Viewer Classic in 2026, which will cause data collection scripts to break.
 
 The first step in training a computer vision model is collecting a set of images. For obtaining satellite images of baseball fields, I chose to use ArcGIS due to its focus on geospatial data analysis, which provides more flexibility for data-driven applications and fewer usage restrictions. Using Python Selenium, I built an automation to visit [ArcGIS's Map Viewer](https://www.arcgis.com/home/webmap/viewer.html) and collect data. Using a geographic coordinate as its input, this automation focuses the map on the baseball field, measures the diagonal of the map in feet, and takes a screenshot of the map.
 
@@ -51,7 +61,11 @@ Following this estimation, the segments are rotated and converted to a 2-dimensi
 
 ### 4. Park Factor Estimation
 
-One potential use for field boundaries is estimating park factors. This is currently a work in progress. My approach is to first find/calculate park factors for AAA, KBO, NPB, and MLB parks. Then, I will engineer features from the field geometry, including field area, average boundary distance from home plate (depth), maximum depth, depth at specific angles, and depth variance. I will also collect some environmental features, including elevation, average temperature, wind patterns, and field orientation. From here, I will perform feature and model selection. Feature selection will likely involve recursive feature elimination, while model selection will likely use leave-one-out cross-validation. This approach should mitigate challenges posed by a small dataset. My hypothesis is that a simple model, such as regularized linear regression, will perform best with my dataset.
+One potential application of field boundaries is estimating park factors. Using data from 49 fields across AAA, KBO, NPB, and MLB, I developed a model to estimate park factors. For AAA, KBO, and NPB, park factors were calculated as the ratio of runs scored at home to runs scored on the road, while MLB park factors were sourced from Baseball Savant.
+
+To improve model accuracy, I engineered features incorporating both ballpark geometry and environmental factors. Through recursive feature elimination, I identified key features: left field, left-center, center field, right-center, right field, and ballpark elevation. Using leave-one-out cross-validation, I selected a Ridge Regression model, which achieved a mean RMSE of 0.0257.
+
+<img src="content/park_predictions.png" width="350"/>
 
 ### 5. Visualization Tools
 
@@ -96,3 +110,5 @@ Looking further ahead, a key goal of this project is to integrate its functional
 - GPU Resources: https://www.kaggle.com/docs/notebooks
 - Satellite Imaging: https://www.arcgis.com/home/webmap/viewer.html
 - Statcast Data: https://baseballsavant.mlb.com/statcast_search
+- Elevation Data: https://www.dcode.fr/earth-elevation
+- Weather Data: https://www.ncei.noaa.gov/access/monitoring/wind/
